@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#204d3a" />
+  <title>La Huerta de Larissa | Bienestar que hace bien</title>
+  <meta name="description" content="Alimentos saludables, veganos y responsables. Productos seleccionados para cuidarte y cuidar nuestro entorno." />
+  <link rel="icon" href="logo-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <div class="announcement">Envíos locales en Zona Norte GBA · Retiro coordinado · Compra demo</div>
+    <div class="nav-wrap container">
+      <a class="brand" href="#inicio" aria-label="La Huerta de Larissa, inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img">
+            <path d="M31 43c-9-7-15-15-14-24 11 0 19 6 21 17" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M33 45c1-13 8-23 19-27 2 11-2 20-13 26" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="30" cy="49" r="3.3" fill="currentColor"/>
+            <circle cx="38" cy="47.5" r="2.4" fill="currentColor"/>
+            <circle cx="25" cy="45.5" r="2.2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-copy"><strong>La Huerta</strong><small>de Larissa</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#productos">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#proposito">Nuestro propósito</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+        <span aria-hidden="true">🛒</span>
+        <span>Carrito</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">Bienestar cotidiano · Consumo consciente</span>
+        <h1>Comer rico, sentirte bien y <em>cuidar lo que importa.</em></h1>
+        <p>Alimentos seleccionados para acompañar una vida más saludable, responsable y amable con los animales y el entorno.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#productos">Ver productos</a>
+          <a class="btn btn-ghost" href="#proposito">Conocé nuestro propósito</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Selección responsable</span>
+          <span>✓ Opciones veganas</span>
+          <span>✓ Entrega local</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustración botánica de alimentos saludables">
+        <div class="hero-blob"></div>
+        <div class="pack pack-a"><span>ALMENDRAS</span><b>250 g</b><i>🌰</i></div>
+        <div class="pack pack-b"><span>GRANOLA</span><b>350 g</b><i>🥣</i></div>
+        <div class="pack pack-c"><span>INFUSIÓN</span><b>20 u.</b><i>🍃</i></div>
+        <div class="leaf leaf-1">🌿</div>
+        <div class="leaf leaf-2">🍃</div>
+        <div class="paw">🐾</div>
+        <div class="sun-dot"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="container trust-grid">
+        <div><span>🌱</span><strong>Ingredientes simples</strong><small>Productos seleccionados con criterio.</small></div>
+        <div><span>🐾</span><strong>Compromiso animal</strong><small>Una marca con propósito real.</small></div>
+        <div><span>♻️</span><strong>Consumo responsable</strong><small>Menos impacto, mejores elecciones.</small></div>
+        <div><span>💚</span><strong>Bienestar sin solemnidad</strong><small>Saludable también puede ser rico.</small></div>
+      </div>
+    </section>
+
+    <section class="section container" id="categorias">
+      <div class="section-heading">
+        <div><span class="eyebrow">Explorá la huerta</span><h2>Categorías</h2></div>
+        <p>Todo envasado, simple de elegir y listo para sumar a tu rutina.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card" data-filter="Frutos secos"><span>🌰</span><strong>Frutos secos</strong><small>Proteína, energía y crocancia.</small></button>
+        <button class="category-card" data-filter="Semillas"><span>🌱</span><strong>Semillas</strong><small>Pequeñas, nobles y versátiles.</small></button>
+        <button class="category-card" data-filter="Cereales"><span>🌾</span><strong>Cereales</strong><small>Para desayunos y recetas.</small></button>
+        <button class="category-card" data-filter="Harinas"><span>🥖</span><strong>Harinas</strong><small>Alternativas para cocinar distinto.</small></button>
+        <button class="category-card" data-filter="Sin TACC"><span>✨</span><strong>Sin TACC</strong><small>Opciones claramente identificadas.</small></button>
+        <button class="category-card" data-filter="Veganos"><span>🥬</span><strong>Veganos</strong><small>100% vegetal, sin vueltas.</small></button>
+        <button class="category-card" data-filter="Infusiones"><span>🍵</span><strong>Infusiones</strong><small>Una pausa que también suma.</small></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="container">
+        <div class="section-heading product-heading">
+          <div><span class="eyebrow">Elegidos para vos</span><h2>Productos destacados</h2></div>
+          <div class="filters" aria-label="Filtros de productos">
+            <button class="filter-chip active" data-filter="Todos">Todos</button>
+            <button class="filter-chip" data-filter="Veganos">Veganos</button>
+            <button class="filter-chip" data-filter="Sin TACC">Sin TACC</button>
+            <button class="filter-chip" data-filter="Infusiones">Infusiones</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section container" id="ofertas">
+      <div class="offer-banner">
+        <div class="offer-copy">
+          <span class="eyebrow eyebrow-light">Oferta de la semana</span>
+          <h2>Armá tu combo desayuno</h2>
+          <p>Granola + almendras + infusión con <strong>15% OFF</strong>. Una promoción demo, porque hasta los prototipos aprendieron a seducir con descuentos.</p>
+          <button class="btn btn-light" id="addCombo">Agregar combo · $ 19.900</button>
+        </div>
+        <div class="offer-visual" aria-hidden="true">
+          <span class="offer-bowl">🥣</span>
+          <span class="offer-leaf">🌿</span>
+          <span class="offer-cup">🍵</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section purpose" id="proposito">
+      <div class="container purpose-grid">
+        <div class="purpose-art" aria-hidden="true">
+          <div class="purpose-circle"><span>🐕</span><span>🌿</span><span>🐈</span></div>
+          <div class="purpose-note">Elegir mejor también puede hacer bien más allá de tu mesa.</div>
+        </div>
+        <div class="purpose-copy">
+          <span class="eyebrow">La historia detrás del nombre</span>
+          <h2>Una huerta con propósito.</h2>
+          <p><strong>Larissa</strong> nace del apodo de Lara y de una forma de vivir: cuidar la salud, moverse, elegir una alimentación consciente y comprometerse con el bienestar animal.</p>
+          <p>Queremos que cada producto de la tienda acompañe esa misma idea. Comer mejor sin extremismos, consumir con más conciencia y apoyar una relación más respetuosa con nuestro entorno.</p>
+          <div class="impact-cards">
+            <article><strong>100% vegetal</strong><span>Selección visible de productos veganos.</span></article>
+            <article><strong>Cuidado animal</strong><span>Un propósito central de la marca, no una nota al pie.</span></article>
+            <article><strong>Compra consciente</strong><span>Información clara para decidir mejor.</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contacto">
+      <div class="contact-card">
+        <div>
+          <span class="eyebrow">Estamos cerca</span>
+          <h2>¿Necesitás ayuda con tu compra?</h2>
+          <p>Atención por WhatsApp, retiro coordinado y entregas locales en Zona Norte de GBA.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://wa.me/5491100000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a class="btn btn-ghost" href="mailto:hola@lahuertadelarissa.com.ar">hola@lahuertadelarissa.com.ar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="#inicio">
+          <span class="brand-mark" aria-hidden="true">🌿</span>
+          <span class="brand-copy"><strong>La Huerta</strong><small>de Larissa</small></span>
+        </a>
+        <p>Bienestar, alimentación consciente y respeto por nuestro entorno.</p>
+      </div>
+      <div><strong>Tienda</strong><a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="#ofertas">Ofertas</a></div>
+      <div><strong>Ayuda</strong><a href="#contacto">Contacto</a><a href="#">Envíos</a><a href="#">Medios de pago</a></div>
+      <div><strong>Seguinos</strong><a href="#">Instagram</a><a href="#">WhatsApp</a><a href="#">Nuestro propósito</a></div>
+    </div>
+    <div class="container footer-bottom">© 2026 La Huerta de Larissa · Prototipo v0.1 · Precios y datos ilustrativos</div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div><span class="eyebrow">Tu selección</span><h2>Carrito</h2></div>
+      <button class="icon-button" id="closeCart" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">
+      <span>🧺</span><strong>Tu carrito está vacío</strong><p>Qué paz. También qué poco negocio.</p>
+    </div>
+    <div class="cart-summary">
+      <div><span>Subtotal</span><strong id="cartSubtotal">$ 0</strong></div>
+      <small>Envío calculado al finalizar la compra.</small>
+      <button class="btn btn-primary full" id="checkoutButton">Continuar compra</button>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <div class="modal" id="checkoutModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-card">
+      <button class="icon-button modal-close" id="closeCheckout" aria-label="Cerrar">×</button>
+      <span class="eyebrow">Checkout demo</span>
+      <h2 id="checkoutTitle">Finalizá tu compra</h2>
+      <p>Esta versión simula el flujo de compra. No procesa pagos reales todavía.</p>
+      <form id="checkoutForm">
+        <label>Nombre y apellido<input required placeholder="Lara Pérez" /></label>
+        <label>Email<input required type="email" placeholder="lara@email.com" /></label>
+        <label>Forma de entrega<select required><option value="">Seleccionar</option><option>Envío local</option><option>Retiro coordinado</option></select></label>
+        <label>Medio de pago<select required><option value="">Seleccionar</option><option>Mercado Pago</option><option>Tarjeta</option><option>Transferencia</option><option>Efectivo al retirar</option></select></label>
+        <button class="btn btn-primary full" type="submit">Simular pedido</button>
+      </form>
+      <div class="checkout-success" id="checkoutSuccess" hidden>
+        <span>✓</span><h3>Pedido simulado correctamente</h3><p>En una versión productiva, acá se generaría la orden y la integración con pago/envío.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

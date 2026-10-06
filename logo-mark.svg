@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="La Huerta de Larissa">
+  <rect width="64" height="64" rx="18" fill="#204d3a"/>
+  <path d="M31 43c-9-7-15-15-14-24 11 0 19 6 21 17" fill="none" stroke="#fffdf8" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M33 45c1-13 8-23 19-27 2 11-2 20-13 26" fill="none" stroke="#fffdf8" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="30" cy="49" r="3.3" fill="#e6b65d"/>
+  <circle cx="38" cy="47.5" r="2.4" fill="#e6b65d"/>
+  <circle cx="25" cy="45.5" r="2.2" fill="#e6b65d"/>
+</svg>
